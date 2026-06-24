@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #161b22; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* ── Bootstrap Card Override ───────────────────────── */
+.card {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d !important;
+  color: #c9d1d9 !important;
+  border-radius: 12px !important;
+}
+.card-header {
+  background-color: #161b22 !important;
+  border-bottom: 1px solid #30363d !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* ── Table Override ────────────────────────────────── */
+.table {
+  color: #c9d1d9 !important;
+  border-color: #21262d !important;
+  margin: 0 !important;
+}
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  border-bottom-color: #21262d !important;
+  color: #c9d1d9 !important;
+  padding: 12px 16px !important;
+}
+.table thead th {
+  background-color: #0d1117 !important;
+  border-bottom: 1px solid #30363d !important;
+  color: #8b949e !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  padding: 10px 16px !important;
+}
+.table-hover > tbody > tr:hover > * {
+  background-color: #1c2128 !important;
+  color: #c9d1d9 !important;
+}
+
+/* ── Form Override ─────────────────────────────────── */
+.form-control {
+  background-color: #0d1117 !important;
+  border: 1px solid #30363d !important;
+  color: #c9d1d9 !important;
+  border-radius: 8px !important;
+}
+.form-control:focus {
+  background-color: #0d1117 !important;
+  border-color: #58a6ff !important;
+  color: #c9d1d9 !important;
+  box-shadow: 0 0 0 3px rgba(88,166,255,0.15) !important;
+}
+.form-control::placeholder { color: #484f58 !important; }
+
+/* ── Input Group ───────────────────────────────────── */
+.input-group-lg .form-control {
+  font-size: 1rem !important;
+  padding: 14px 18px !important;
+}
+
+/* ── Navbar Override ───────────────────────────────── */
+.navbar { padding: 12px 0 !important; }
+.navbar-toggler {
+  border-color: #30363d !important;
+  color: #8b949e !important;
+}
+
+/* ── Alert Override ────────────────────────────────── */
+.alert { border-radius: 8px !important; }
+
+/* ── Progress Bar ──────────────────────────────────── */
+.progress {
+  background-color: #21262d !important;
+  border-radius: 4px !important;
+}
+
+/* ── Spinner ───────────────────────────────────────── */
+.spinner-border { border-width: 3px !important; }
+
+/* ── Utility Classes ───────────────────────────────── */
+.text-muted { color: #8b949e !important; }
+.border-dark-subtle { border-color: #30363d !important; }
+
+/* ── Monospace ─────────────────────────────────────── */
+.mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.82rem;
+}
+
+/* ── Section Cards ─────────────────────────────────── */
+.section-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.section-card-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid #30363d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #161b22;
+}
+.section-card-body { padding: 0; }
+
+/* ── Severity Colors ───────────────────────────────── */
+.severity-critical { color: #da3633; }
+.severity-high     { color: #f85149; }
+.severity-medium   { color: #d29922; }
+.severity-low      { color: #58a6ff; }
+.severity-safe     { color: #3fb950; }
