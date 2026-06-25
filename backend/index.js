@@ -7,7 +7,7 @@ app.use(express.json());
 const cors = require("cors");
 
 app.use(cors({
-    origin: "process.env.FRONTENDURL",
+    origin: "https://portpulseapp.netlify.app",
     credentials: true
 }));
 
