@@ -1,17 +1,19 @@
 import axios from 'axios';
-require('dotenv').config();
+
+// Create React App reads variables from the environment automatically using process.env.REACT_APP_
+const API_BASE_URL = process.env.REACT_APP_RENDER_URL;
 
 export const runScan = async (target) => {
-  const response = await axios.post(`${process.env.RENDER_URL}/scan`, { target });
+  const response = await axios.post(`${API_BASE_URL}/scan`, { target });
   return response.data;
 };
 
 export const fetchHistory = async () => {
-  const response = await axios.get(`${process.env.RENDER_URL}/scan/history`);
+  const response = await axios.get(`${API_BASE_URL}/scan/history`);
   return response.data;
 };
 
 export const clearHistory = async () => {
-  const response = await axios.delete(`${process.env.RENDER_URL}/scan/history`);
+  const response = await axios.delete(`${API_BASE_URL}/scan/history`);
   return response.data;
 };
