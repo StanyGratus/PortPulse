@@ -1,11 +1,15 @@
 const express=require('express');
 const mongoose=require('mongoose');
-const cors=require('cors');
 require('dotenv').config();
 
 const app=express();
-app.use(cors());
 app.use(express.json());
+const cors = require("cors");
+
+app.use(cors({
+    origin: "process.env.FRONTENDURL",
+    credentials: true
+}));
 
 const scanRoutes=require('./routes/scanRoutes');
 app.use('/api/scan', scanRoutes);
