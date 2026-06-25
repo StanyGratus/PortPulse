@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://portpulse.onrender.com/api';
 
 export const runScan = async (target) => {
   const response = await axios.post(`${BASE_URL}/scan`, { target });
