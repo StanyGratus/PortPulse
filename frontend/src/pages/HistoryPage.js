@@ -85,7 +85,7 @@ function HistoryPage() {
           </small>
         </div>
         <div style={{ display: 'flex', gap: '10px' }}>
-          {history.length > 0 && (
+          {/* {history.length > 0 && (
             <button
               onClick={handleClear}
               disabled={clearing}
@@ -102,7 +102,7 @@ function HistoryPage() {
             >
               {clearing ? '⏳ Clearing...' : '🗑️ Clear All'}
             </button>
-          )}
+          )} */}
           <Link to="/">
             <Button style={{
               backgroundColor: '#238636',
